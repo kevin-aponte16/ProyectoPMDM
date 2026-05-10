@@ -61,7 +61,7 @@ class AudioActivity : AppCompatActivity() {
     override fun onDestroy() {
 
         super.onDestroy()
-
+   // Liberamos la memoria del sistema al destruir la actividad
         mediaPlayer.release()
     }
 }

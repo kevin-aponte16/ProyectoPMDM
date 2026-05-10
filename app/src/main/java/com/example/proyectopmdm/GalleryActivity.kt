@@ -10,9 +10,9 @@ class GalleryActivity : AppCompatActivity() {
     private var currentImage = 0
 
     private val images = arrayOf(
-        R.drawable.movie1,
-        R.drawable.movie2,
-        R.drawable.movie3
+        R.drawable.foto1,
+        R.drawable.foto2,
+        R.drawable.foto3
     )
 
     private val names = arrayOf(

@@ -17,7 +17,7 @@ class VideoActivity : AppCompatActivity() {
 
         // Ruta del vídeo
         val videoPath =
-            "android.resource://" + packageName + "/" + R.raw.trailer
+            "android.resource://" + packageName + "/" + R.raw.video
 
         val uri = Uri.parse(videoPath)
 
