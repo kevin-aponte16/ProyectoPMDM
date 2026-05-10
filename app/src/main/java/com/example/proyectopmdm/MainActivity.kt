@@ -1,20 +1,33 @@
 package com.example.proyectopmdm
-
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnGallery = findViewById<Button>(R.id.btnGallery)
+        val btnAudio = findViewById<Button>(R.id.btnAudio)
+        val btnVideo = findViewById<Button>(R.id.btnVideo)
+
+        // Navegar a galería
+        btnGallery.setOnClickListener {
+            startActivity(Intent(this, GalleryActivity::class.java))
+        }
+
+        // Navegar a audio
+        btnAudio.setOnClickListener {
+            startActivity(Intent(this, AudioActivity::class.java))
+        }
+
+        // Navegar a vídeo
+        btnVideo.setOnClickListener {
+            startActivity(Intent(this, VideoActivity::class.java))
+        }
+
         }
     }
-}

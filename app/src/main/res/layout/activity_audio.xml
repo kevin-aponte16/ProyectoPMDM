@@ -3,38 +3,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="20dp"
-    android:background="#101820">
+    android:padding="20dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Media App"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:text="Reproductor de Audio"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="30dp"/>
 
     <Button
-        android:id="@+id/btnGallery"
+        android:id="@+id/btnPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Galería"
+        android:text="Play"
         android:layout_marginBottom="10dp"/>
 
     <Button
-        android:id="@+id/btnAudio"
+        android:id="@+id/btnPause"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Audio"
+        android:text="Pause"
         android:layout_marginBottom="10dp"/>
 
     <Button
-        android:id="@+id/btnVideo"
+        android:id="@+id/btnStop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vídeo"
-        android:layout_marginBottom="10dp"/>
-
+        android:text="Stop"/>
 
 </LinearLayout>
